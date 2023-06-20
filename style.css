@@ -366,6 +366,7 @@ hr {
 
 	#home, #projects, #contact{
         overflow-x: hidden;
+		
 	}
 	header{
 		background-color: var(--main-header-background);
@@ -379,7 +380,7 @@ hr {
 		opacity: 1;
 	}	 
 	.nav-bar{
-		position:fixed;
+		position: fixed;
 		top: 0px;
 		right:0;
 		width:60%;
@@ -389,6 +390,7 @@ hr {
 		align-items: center;
 		justify-content:space-evenly;
 		background:var(--main-header-background);
+		
 		transform:translatex(100%);
 		transition: transform 0.5s ease-in;
 		z-index: -1;
