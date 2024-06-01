@@ -40,6 +40,7 @@ header{
 }
 .nav-show{
 	opacity: 0;
+
 }
 
 header:hover{
@@ -127,8 +128,98 @@ a.nav-link{
 	font-size: 60px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
+	text-align: center;
+}
+/*Education*/
+.edu{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+	width: 65%;
+	margin-top: 15;
+	margin-bottom: 15;
+	margin: auto;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+.year{
+	position: absolute;
+	right: 18%;
+	font-weight: normal;
+	font-size: 1rem;
 }
 
+.univ{
+	font-weight: bolder;
+	
+}
+.degree{
+	font-size: 1rem;
+}
+.desc{
+	font-size: 0.8rem;
+}
+.edu hr{
+	background: var(--main-decor-color);
+	margin: 2px;
+	height: 1px;
+	width: 50px;
+    border-radius:3px;
+	border: hidden;
+	margin-inline-start: auto;
+    margin-inline-end: auto;
+	
+	border-bottom-style: none;
+}
+
+
+
+
+
+/*Achievements*/
+.acv{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+	width: 65%;
+	margin-top: 15;
+	margin-bottom: 15;
+	margin: auto;
+	font-size:1rem;
+	font-family: var(--main-font-family);
+}
+
+/*coding*/
+.code{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+	width: 65%;
+	margin-top: 15;
+	margin-bottom: 15;
+	margin: auto;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+.code a{
+	color:  var(--main-fonts-color);
+	text-decoration: none;
+}
+.code a:hover{
+	color:var(--main-decor-color);
+}
 
 /*──────────────────
     social media
@@ -160,7 +251,7 @@ a.nav-link{
 }
 
 /*──────────────────
-      projects
+		projects
 ──────────────────*/
 
 #projects{
@@ -309,44 +400,6 @@ hr {
 }
 
 /*────────────────── 
-     hamburger
-──────────────────*/
-.hamburger {
-	display: none;
-}
-
-.hamburger div{
-	width: 30px;
-	height: 3px;
-	background: #dbdbdb;
-	margin: 5px;
-	transition:all 0.3s ease;
-}
-
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2{
-	opacity: 0;
-}
-
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity:0;
-		transform: translatex(50px);
-	}
-	to{
-		opacity: 1;
-		transform:translatex(0px);
-	}
-}
-
-/*────────────────── 
     media queries
 ──────────────────*/
 
@@ -364,9 +417,8 @@ hr {
 
 @media only screen and (max-width: 500px) {
 
-	#home, #projects, #contact{
-        overflow-x: hidden;
-		
+	#home, #projects, #contact,#education,#achievements,#coding{
+        overflow-x: scroll;
 	}
 	header{
 		background-color: var(--main-header-background);
@@ -380,7 +432,7 @@ hr {
 		opacity: 1;
 	}	 
 	.nav-bar{
-		position: fixed;
+		position:fixed;
 		top: 0px;
 		right:0;
 		width:60%;
@@ -390,19 +442,11 @@ hr {
 		align-items: center;
 		justify-content:space-evenly;
 		background:var(--main-header-background);
-		
 		transform:translatex(100%);
 		transition: transform 0.5s ease-in;
 		z-index: -1;
 	}
-	.hamburger{
-		position:absolute;
-		top: 17px;
-		right: 25%;
-		display: block;
-		cursor:pointer;
-		z-index: 5;
-	}	
+		
 	.nav-bar li{
 		opacity:0;
 	}
