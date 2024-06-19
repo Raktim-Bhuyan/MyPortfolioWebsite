@@ -9,3 +9,8 @@ $(window).on('scroll', function(){
 	}
 	   
 })
+
+//dynamic footer content
+var year = new Date().getFullYear();
+var date = `©️ RaktimPortfolio ${year} . All Rights Reserved`;
+document.getElementsByTagName('footer')[0].innerHTML = date;
